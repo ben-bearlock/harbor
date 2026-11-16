@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harbor</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/">Harbor</a>
+      <p id="status" class="session">Loading your session…</p>
+      <nav aria-label="Account">
+        <div id="signed-out" hidden>
+          <button id="sign-in" class="btn" type="button">Sign in</button>
+          <button id="sign-up" class="btn" type="button">Sign up</button>
+        </div>
+        <div id="signed-in" hidden>
+          <div id="user-button"></div>
+        </div>
+      </nav>
+    </header>
+    <div id="app" class="app-shell gate-shell"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
